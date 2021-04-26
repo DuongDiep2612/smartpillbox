@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"smartpillbox\startup_stm32f103xb.o"
+"smartpillbox\serial_manager.o"
+"smartpillbox\flash.o"
+"smartpillbox\main.o"
+"smartpillbox\stm32f1xx_it.o"
+"smartpillbox\stm32f1xx_hal_msp.o"
+"smartpillbox\stm32f1xx_hal_gpio_ex.o"
+"smartpillbox\stm32f1xx_hal_tim.o"
+"smartpillbox\stm32f1xx_hal_tim_ex.o"
+"smartpillbox\stm32f1xx_hal_uart.o"
+"smartpillbox\stm32f1xx_hal.o"
+"smartpillbox\stm32f1xx_hal_rcc.o"
+"smartpillbox\stm32f1xx_hal_rcc_ex.o"
+"smartpillbox\stm32f1xx_hal_gpio.o"
+"smartpillbox\stm32f1xx_hal_dma.o"
+"smartpillbox\stm32f1xx_hal_cortex.o"
+"smartpillbox\stm32f1xx_hal_pwr.o"
+"smartpillbox\stm32f1xx_hal_flash.o"
+"smartpillbox\stm32f1xx_hal_flash_ex.o"
+"smartpillbox\stm32f1xx_hal_exti.o"
+"smartpillbox\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "SmartPillBox\SmartPillBox.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SmartPillBox.map" -o SmartPillBox\SmartPillBox.axf
